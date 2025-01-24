@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+}
+.main-header{
+    text-align: center;
+}
+.main-footer{
+    text-align: center;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding: 20px;
+}
