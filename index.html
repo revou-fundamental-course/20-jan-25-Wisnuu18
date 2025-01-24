@@ -7,55 +7,118 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <header class="main-header">Kalkulator BMI</header>
+    <header class="main-header">
+        <h1>Kalkulator BMI</h1>
+    </header>
 
     <main>
         <!-- Section left -->
-        <section>
+        <section class="section-left">
+
             <!-- introduction -->
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi eum sunt nesciunt perferendis, sequi tenetur, sed nemo mollitia animi natus minus! Omnis debitis nam, facere illum praesentium odio fugiat.</p>
+        <article class="introduction">
+            <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
         </article>
+
         <!-- form -->
-         <form action="">
+         <form action="" class="count-box">
+            
+            <div class="form-group">
+                <p>Jenis Kelamin</p>
+                <label for="Laki-laki">
+                    <input type="radio" name="Jenis-kelamin" value="Laki-laki" id="Laki-laki">Laki-laki
+                </label>
+
+                <label for="Perempuan">
+                    <input type="radio" name="Jenis-kelamin" value="Perempuan" id="Perempuan">Perempuan
+                </label>
+            </div>
+
             <div class="form-group">
                 <label for="input-berat-badan">Berat Badan (Kg)</label>
                 <input type="number" id="input-berat-badan">
             </div>
-         <form action="">
+
             <div class="form-group">
-                <label for="input-berat-badan">Usia (Tahun)</label>
-                <input type="number" id="input-berat-badan">
-            </div>
-         <form action="">
-            <div class="form-group">
-                <label for="input-berat-badan">Tinggi badan (cm)</label>
-                <input type="number" id="input-berat-badan">
+                <label for="input-usia">Usia (Tahun)</label>
+                <input type="number" id="input-usia">
             </div>
 
-            <div>
-                <button>Hitung BMI</button>
-                <button>Reset</button>
+            <div class="form-group">
+                <label for="input-tinggi-badan">Tinggi badan (cm)</label>
+                <input type="number" id="input-tinggi-badan">
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="btn-count">Hitung BMI</button>
+                <button type="reset" class="btn-reset">Reset</button>
             </div>
     
          </form>
          <!-- Feature Information -->
-         <article>
-            <header>
-                <h2>Feature Information</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi doloribus debitis exercitationem, culpa fugit minima. Quia voluptates, facere enim facilis, eius magnam assumenda maiores, consequatur autem earum illum cupiditate.</p>
+         <article class="fitur-information">
+            <div class="fitur-list">
+                <h2>Keunggulan fitur</h2>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>menentukan kategori berat badan ideal atau Tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+            </div>
+
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkomunikasi dengan orang yang memenuhi syarat seperti dokter</p>
+                <br>
+                <p>Kalkulator akan memberi anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Index Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = <var>Kg/M<sup>2</sup></var>.</p>
+
          </article>
+
         </section>
         <!-- Section right -->
-         <section>
+         <section class="section-right">
             <header>
-                <h2>Hasil Perhitungan BMI</h2>
+                <h2>Hasil</h2>
             </header>
+
+            <form action="" class="result-box">
+                <div class="result-point">
+
+                </div>
+            </form>
+
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi est cupiditate omnis modi facere totam eum. Inventore illo sunt, qui, est nulla consequatur aperiam vero id, blanditiis perspiciatis iste provident!</p>
+                <p>Anda berada dalam kategori overweight atau berat badan berlenih.</p>
+                <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
+                <p>Jika BMI anda dalam katergoti ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
             </article>
-            
+
+            <div>
+                <button type="submit">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button type="submit">Registrasi Online Ahli Gizi</button>
+            </div>
+
+            <article>
+
+                <p>BMI tidak sepenuhnya meakili diagonisis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+
+            </article>
+
+            <div class="closing">
+
+                <h2>Beberapa penyakit yang berasal dari kegemukan</h2>
+
+                <ul>
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Skait jantung</li>
+                    <li>Ostreoathiritis</li>
+                </ul>
+            </div>
+
+            <div>
+                <button type="submit">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button type="submit">Registrasi Online Ahli Gizi</button>
+            </div>
+
          </section>
     </main>
 
