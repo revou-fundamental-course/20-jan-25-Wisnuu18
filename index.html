@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1>Kalkulator BMI</h1>
-    </header>
-
     <main>
         <!-- Section left -->
         <section class="section-left">
-
+            <header class="left-header">
+                <h1>Kalkulator BMI</h1>
+            </header>
             <!-- introduction -->
         <article class="introduction">
             <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
@@ -49,11 +47,10 @@
                 <input type="number" id="input-tinggi-badan">
             </div>
 
-            <div class="btn">
+            <div class="button">
                 <button type="submit" class="btn-count">Hitung BMI</button>
                 <button type="reset" class="btn-reset">Reset</button>
             </div>
-    
          </form>
          <!-- Feature Information -->
          <article class="fitur-information">
@@ -65,17 +62,17 @@
                     <li>Mempersiapkan program penurunan berat badan</li>
                 </ol>
             </div>
-
-                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkomunikasi dengan orang yang memenuhi syarat seperti dokter</p>
-                <br>
-                <p>Kalkulator akan memberi anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Index Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = <var>Kg/M<sup>2</sup></var>.</p>
-
+                <article>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkomunikasi dengan orang yang memenuhi syarat seperti dokter</p>
+                    <br>
+                    <p>Kalkulator akan memberi anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Index Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = <var>Kg/M<sup>2</sup></var>.</p>
+                </article>
          </article>
 
         </section>
         <!-- Section right -->
          <section class="section-right">
-            <header>
+            <header class="left-header">
                 <h2>Hasil</h2>
             </header>
 
@@ -83,17 +80,26 @@
                 <div class="result-point">
 
                 </div>
+                <div class="btn-download">
+                    <button type="submit">Download Hasil BMI</button>
+                </div>
             </form>
+                <div class="result-info">
 
-            <article>
-                <p>Anda berada dalam kategori overweight atau berat badan berlenih.</p>
-                <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
-                <p>Jika BMI anda dalam katergoti ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
-            </article>
+                </div>
+                <div class="result-suggest">
+                    <article class="suggest1">
+                        <p>Anda berada dalam kategori overweight atau berat badan berlenih.</p>
+                        <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
+                        <p>Jika BMI anda dalam katergoti ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+                    </article>
+                    <article class="suggest2">
 
-            <div>
-                <button type="submit">Konsultasi Ahli Gizi Via Aplikasi</button>
-                <button type="submit">Registrasi Online Ahli Gizi</button>
+                    </article>
+                </div>
+            <div class="btn-consul">
+                <button type="submit" class="consul-app">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button type="submit" class="consul-register">Registrasi Online Ahli Gizi</button>
             </div>
 
             <article>
