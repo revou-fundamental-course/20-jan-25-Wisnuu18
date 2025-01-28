@@ -90,27 +90,63 @@ ol{
     margin-bottom: 20px;
 }
 .result-box{
-    background-color: gainsboro;
-    padding: 32px;
-    padding-bottom: 10px;
+    background-image: linear-gradient( teal, white);
     margin: 32px auto;
+    padding: 32px;
     border-radius: 10px;
     width: 400px;
+    border: 0.7px solid teal;
+}
+.result-point{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    font-size: 100px;
+    background: none;
+    border: 1px solid;
+    margin: 20px;
 }
 .btn-download{
     border: none;
     padding: 8px;
-    width: 30%;
-    margin: 20px auto;
-    margin-bottom: 0;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    margin:20px auto;
+
 
 }
 .btn-consul{
     border: none;
     padding: 8px;
     font-weight: bold;
-    margin: 20px;
+    margin: 32px auto;
+    display: flex;
     
+}
+.consul-app, .consul-register{
+    border: none;
+    padding: 8px;
+    margin-right: 8px;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+
+}
+.consul-app:hover, .consul-register:hover{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.risk-box{
+    background-color: gainsboro;
+    margin: 32px auto;
+    padding: 32px;
+    border-radius: 10px;
+    width: 500px;
+    border: 0.7px solid teal;
 }
 
 /* footer style */

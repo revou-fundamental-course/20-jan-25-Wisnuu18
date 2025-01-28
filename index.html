@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <main>
+    <main style="border: 1px solid black;">
         <!-- Section left -->
-        <section class="section-left">
+        <section class="section-left" style="border: 1px solid black;">
             <header class="left-header">
                 <h1>Kalkulator BMI</h1>
             </header>
@@ -71,17 +71,19 @@
 
         </section>
         <!-- Section right -->
-         <section class="section-right">
+         <section class="section-right" style="border: 1px solid black;">
             <header class="left-header">
                 <h2>Hasil</h2>
             </header>
 
             <form action="" class="result-box">
-                <div class="result-point">
-
+                <div class="result-position">
+                <h3>Berat Badan Lebih</h3>
+                <div class="result-point-box">
+                    <input type="text" class="result-point">
                 </div>
-                <div class="btn-download">
-                    <button type="submit">Download Hasil BMI</button>
+                
+                    <button type="submit" class="btn-download">Download Hasil BMI</button>
                 </div>
             </form>
                 <div class="result-info">
@@ -108,23 +110,22 @@
 
             </article>
 
-            <div class="closing">
+            <div class="risk-box">
+                <div class="risk">
+                    <h3>Beberapa Penyakit yang berasal dari kegemukan</h3>
+                    <ol>
+                        <li>Diabetes</li>
+                        <li>Hypertensi</li>
+                        <li>Sakit jantung</li>
+                        <li>Ostreoathiritis</li>
+                    </ol>
+                </div>
 
-                <h2>Beberapa penyakit yang berasal dari kegemukan</h2>
-
-                <ul>
-                    <li>Diabetes</li>
-                    <li>Hipertensi</li>
-                    <li>Skait jantung</li>
-                    <li>Ostreoathiritis</li>
-                </ul>
-            </div>
-
-            <div>
-                <button type="submit">Konsultasi Ahli Gizi Via Aplikasi</button>
-                <button type="submit">Registrasi Online Ahli Gizi</button>
-            </div>
-
+                <div class="btn-consul">
+                    <button type="submit" class="consul-app">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button type="submit" class="consul-register">Registrasi Online Ahli Gizi</button>
+                </div>
+        </div>
          </section>
     </main>
 
