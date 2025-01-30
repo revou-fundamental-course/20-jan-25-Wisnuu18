@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <main style="border: 1px solid black;">
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <main>
         <!-- Section left -->
-        <section class="section-left" style="border: 1px solid black;">
-            <header class="left-header">
-                <h1>Kalkulator BMI</h1>
-            </header>
+        <section class="section-left">
+              
             <!-- introduction -->
         <article class="introduction">
             <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
         </article>
 
-        <!-- form -->
+        <!-- form hitung BMI -->
          <form action="" class="count-box">
             
             <div class="form-group">
@@ -48,7 +49,7 @@
             </div>
 
             <div class="button">
-                <button type="submit" class="btn-count">Hitung BMI</button>
+                <button type="button" class="btn-count" onclick="calculateBmi()">Hitung BMI</button>
                 <button type="reset" class="btn-reset">Reset</button>
             </div>
          </form>
@@ -71,32 +72,25 @@
 
         </section>
         <!-- Section right -->
-         <section class="section-right" style="border: 1px solid black;">
-            <header class="left-header">
+         <section class="section-right">
                 <h2>Hasil</h2>
-            </header>
 
             <form action="" class="result-box">
-                <div class="result-position">
-                <h3>Berat Badan Lebih</h3>
-                <div class="result-point-box">
-                    <input type="text" class="result-point">
-                </div>
-                
-                    <button type="submit" class="btn-download">Download Hasil BMI</button>
-                </div>
+                            <span id="description-bmi"></span>
+                        <div class="result">
+                            <span id="result-bmi">0</span>
+                        </div>
+                        <button type="submit" class="btn-download">Download Hasil BMI</button>
+                    </div>
             </form>
                 <div class="result-info">
 
                 </div>
                 <div class="result-suggest">
                     <article class="suggest1">
-                        <p>Anda berada dalam kategori overweight atau berat badan berlenih.</p>
+                        <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
                         <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.</p>
-                        <p>Jika BMI anda dalam katergoti ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
-                    </article>
-                    <article class="suggest2">
-
+                        <p>Jika BMI anda dalam katergori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
                     </article>
                 </div>
             <div class="btn-consul">
@@ -111,24 +105,24 @@
             </article>
 
             <div class="risk-box">
+                <h3>Beberapa Penyakit yang berasal dari kegemukan</h3>
                 <div class="risk">
-                    <h3>Beberapa Penyakit yang berasal dari kegemukan</h3>
-                    <ol>
+                    <ul type="none">
                         <li>Diabetes</li>
                         <li>Hypertensi</li>
                         <li>Sakit jantung</li>
                         <li>Ostreoathiritis</li>
-                    </ol>
+                    </ul>
                 </div>
 
-                <div class="btn-consul">
+                <div class="btn-consul2">
                     <button type="submit" class="consul-app">Konsultasi Ahli Gizi Via Aplikasi</button>
                     <button type="submit" class="consul-register">Registrasi Online Ahli Gizi</button>
                 </div>
         </div>
          </section>
     </main>
-
-    <footer class="main-footer">Made by Wisnu@2025</footer>
+    <footer class="main-footer"><small>Made by Wisnu@2025</small></footer>
+    <script src="js\script.js"></script>
 </body>
 </html>

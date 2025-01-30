@@ -1,6 +1,5 @@
 /* General style */
 *{
-    padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,24 +8,26 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    margin: 32px;
-    padding: 32px;
+    padding: 30px;
 
 }
 /* Main header style */
-.left-header{
+header{
     margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: teal;
+    color: white;
 }
 p{
     text-align: justify;
 }
 .count-box{
     background-image: linear-gradient( white, teal, white);
-    margin: 32px auto;
-    padding: 32px;
     border-radius: 10px;
-    width: 400px;
-    border: 0.7px solid teal;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid teal;
 }
 .form-group{
     margin: 20px;
@@ -40,20 +41,19 @@ input[type=number] {
     padding: 12px 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    border-style: none;
     margin: 10px auto;
 }
 .button{
-    margin-left: 25%;
+    text-align: center;
 }
 .btn-count{
     border: none;
     padding: 8px;
-    width: 30%;
     margin-top: 8px;
     background-color: teal;
     color: white;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 .btn-count:hover{
     background-color: black;
@@ -67,11 +67,11 @@ input[type=number] {
 .btn-reset{
     border: none;
     padding: 8px;
-    width: 30%;
     margin-top: 8px;
     background-color: white;
     color: teal;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 .btn-reset:hover{
     background-color: orangered;
@@ -86,44 +86,31 @@ ol{
     margin:20px 0 20px 20px;
 }
 /* right section */
-.right-header{
-    margin-bottom: 20px;
-}
 .result-box{
-    background-image: linear-gradient( teal, white);
-    margin: 32px auto;
-    padding: 32px;
+    background-color: gainsboro;
     border-radius: 10px;
-    width: 400px;
-    border: 0.7px solid teal;
-}
-.result-point{
-    width: 100px;
-    height: 100px;
-    padding: 15px;
-    font-size: 100px;
-    background: none;
-    border: 1px solid;
+    padding: 20px;
+    padding-bottom: 10px;
     margin: 20px;
+    text-align: center;
+}
+.result{
+    font-size: 80px;
+    margin: 10px auto;
 }
 .btn-download{
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 10px;
     background-color: teal;
     color: white;
-    font-weight: bold;
-    margin:20px auto;
-
-
+    border-radius: 10px;
+    border: none;
 }
 .btn-consul{
     border: none;
     padding: 8px;
     font-weight: bold;
-    margin: 32px auto;
-    display: flex;
-    
+    margin: 20px auto;
+    text-align: center;
 }
 .consul-app, .consul-register{
     border: none;
@@ -138,18 +125,29 @@ ol{
 .consul-app:hover, .consul-register:hover{
     background-color: black;
     color: white;
-    padding: 10px;
 }
 .risk-box{
     background-color: gainsboro;
-    margin: 32px auto;
-    padding: 32px;
+    padding: 20px;
     border-radius: 10px;
-    width: 500px;
-    border: 0.7px solid teal;
+    text-align: center;
+    margin: 20px;
+}
+.risk{
+    margin: 20px;
+}
+.btn-consul2{
+    margin-top: 20px;
 }
 
 /* footer style */
 footer{
     text-align: center;
+    background-color: black;
+    color: white;
 }
+/* Responsive page */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
